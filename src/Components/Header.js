@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
 
+// renders Nav exports to App.js
 class Header extends Component {
 
   doAThing() {
