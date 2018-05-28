@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
 // rendered in Header
-class Nav extends Component {
+export class Nav extends Component {
   render() {
       const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];
-      const navLinks = pages.map( page => {
+      const navLinks = pages.map( (page, index) => { // index added for key property
         return (
-          <a href={'/' + page}>
+          <a href={'/' + page} key={ index }>
             {page}
           </a>
         )
@@ -17,4 +17,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+// export default Nav;
