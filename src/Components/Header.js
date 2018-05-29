@@ -11,7 +11,7 @@ class Header extends Component {
   render() {
     return (
       <header onClick={this.doAThing}>
-        <h1>Hi</h1>
+        <h1>{this.props.title}</h1>
         <Nav />
       </header>
     );

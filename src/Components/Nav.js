@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 export class Nav extends Component {
   render() {
       const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];
-      const navLinks = pages.map( (page, index) => { // index added for key property
+      const navLinks = pages.map( (page, index, arr) => { // index added for key property
+        console.log(page, index, arr);
         return (
           <a href={'/' + page} key={ index }>
             {page}
