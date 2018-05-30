@@ -18,4 +18,9 @@ class Header extends Component {
   }
 }
 
+// Default props
+Header.defaultProps = {
+  title: 'I am a default prop'
+};
+
 export default Header;
